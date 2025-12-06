@@ -1,0 +1,149 @@
+<!-- # Employee Shift Board – Screenshots & Descriptions
+
+Below, screenshots and their brief descriptions are grouped into two sections:  
+**Postman API Requests** (API testing and responses) and **Prototype Screens** (demonstration credentials and employee info).
+
+---
+
+## 1. Postman API Requests
+
+### a. Get Shifts by Employee and Date  
+**Image 1:**  
+GET `/shifts?employee=1&date=2025-01-15` tested; returns an empty array, showing no shifts for employee 1 on the given date.  
+![Get Shifts - Postman] 
+
+---
+
+### b. Create Shift - Overlapping Error  
+**Image 2:**  
+POST `/shifts` with a conflicting time for employee 4; API correctly rejects the request with a `400 Bad Request` and error `"Shift overlaps with an existing shift for this employee on the same date"`.  
+![Create Shift Error](IMAGE_2_URL_PLACEHOLDER)
+
+---
+
+### c. REST APIs List  
+**Image 3:**  
+Reference image listing the available REST API endpoints:
+- POST /login  
+- GET /employees  
+- POST /shifts  
+- GET /shifts?employee=xx&date=xx  
+- DELETE /shift/:id  
+![REST APIs List](IMAGE_3_URL_PLACEHOLDER)
+
+---
+
+### d. Delete Shift  
+**Image 4:**  
+DELETE `/shift/1` request successfully deletes shift 1, with status `200 OK` and message `"Shift deleted successfully"`.  
+![Delete Shift](IMAGE_4_URL_PLACEHOLDER)
+
+---
+
+### e. Create Shift - Successful Creation  
+**Image 5:**  
+POST `/shifts` with valid parameters; server responds with the new shift's details (`id`, `employee_id`, times, and duration).  
+![Create Shift Success](IMAGE_5_URL_PLACEHOLDER)
+
+---
+
+### f. Get All Employees - Token Error  
+**Image 7:**  
+GET `/employees` tested; server responds with `403 Forbidden` and `"Invalid or expired token"` error, showing authentication required.  
+![Get Employees Forbidden](IMAGE_7_URL_PLACEHOLDER)
+
+---
+
+### g. Login Authentication  
+**Images 8 and 9:**  
+POST `/login` successfully authenticates, returning a JWT `token` and user details.  
+![Login Success](IMAGE_8_URL_PLACEHOLDER)  
+![Login Success](IMAGE_9_URL_PLACEHOLDER)
+
+---
+
+## 2. Prototype Screens
+
+### a. Demo Login Credentials  
+**Images 6 and 10:**  
+Screens show how login credentials are provided for a newly created employee—these are purely for prototyping/testing.  
+**Important:**  
+- These demo credentials should be sent to the employee’s correct email (not shown to others or reused).  
+- The yellow warning box highlights that credentials are viewable only once and must be communicated securely.  
+![Demo Credentials](IMAGE_6_URL_PLACEHOLDER)  
+![Demo Employee Info & Credentials](IMAGE_10_URL_PLACEHOLDER)
+
+### b. Additional Credential Demo  
+**Image 6:**  
+Shows how credentials would be generated and displayed for another user, again for prototype/testing purposes only.  
+![Credential Demo](IMAGE_6_URL_PLACEHOLDER)
+
+---
+
+## Notes
+
+- The **Postman API Requests** section demonstrates API functionality, error handling, and authentication for the Employee Shift Board app.
+- The **Prototypes** section displays the interface for new employee credential creation, serving as a demo or conceptual mockup for future development.
+
+*Replace `IMAGE_X_URL_PLACEHOLDER` with actual image embeds or links as appropriate.*
+
+Let me know if you want these sections further customized or need direct image embedding for a specific platform! -->
+
+
+
+# Employee Shift Board – Screenshots & Descriptions
+
+Below, screenshots and their brief descriptions are grouped into two sections:  
+**Postman API Requests** (API testing and responses) and **Prototype Screens** (demonstration credentials and employee info).
+
+---
+
+## 1. Postman API Requests
+
+### a. Get Shifts by Employee and Date  
+GET `/shifts?employee=1&date=2025-01-15` tested; returns an empty array, showing no shifts for employee 1 on the given date.  
+![Get Shifts - Postman](Screenshots/Get_Shifts.jpg)
+
+---
+
+### b. Create Shift - Overlapping Error  
+POST `/shifts` with a conflicting time for employee 4; API correctly rejects the request with a `400 Bad Request` and error about overlapping shifts.  
+![Create Shift Error](Screenshots/Create_shifts.jpg)
+
+---
+
+### c. Delete Shift  
+DELETE `/shift/1` request successfully deletes shift 1, with a confirmation message.  
+![Delete Shift](Screenshots/Delete_Shifts.jpg)
+
+---
+
+### d. Get All Employees - Token Error  
+GET `/employees` tested; server responds with `403 Forbidden` and `"Invalid or expired token"` error, showing authentication required.  
+![Get Employees Forbidden](Screenshots/Get_all_employees.jpg)
+
+---
+
+### e. Login Authentication  
+POST `/login` successfully authenticates, returning a JWT `token` and user details.  
+![Login Success](Screenshots/Login1.jpg)  
+![Post Login](Screenshots/Post_Login.jpg)
+
+---
+
+## 2. Prototype Screens
+
+These screens show how demo login credentials are provided for newly created employees. These are for demonstration/testing only! In production, credentials should be securely sent to the employee’s correct email and never exposed or reused.
+
+- `[Login Prototype 1](Screenshots/Login01.jpg)`
+- `[Login Prototype 2](Screenshots/Login1.jpg)` (also shown above)
+- `[Post Login Prototype](Screenshots/Post_Login.jpg)` (also shown above)
+
+---
+
+## Notes
+
+- The **Postman API Requests** section demonstrates API functionality, error handling, and authentication for the Employee Shift Board app.
+- The **Prototype Screens** display the login/credential UI for new employees (as a demo).
+
+---
