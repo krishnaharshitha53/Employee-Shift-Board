@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "hire-me@anshumat.org",
+      "password": "$2a$10$zjqNOYM5O4edt1hYVp3bhOVJghQufRvWsD1Dzd9EssdSu5gaHq3Sq",
+      "role": "admin",
+      "employee_id": 1
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "$2a$10$DUZigAS9qzxy7Fm65VOunOgXYrXMqiNk0TF3yfVuro80H9ujTsSNW",
+      "role": "user",
+      "employee_id": 2
+    },
+    {
+      "id": 3,
+      "email": "anishasodani@gmail.com",
+      "password": "$2a$10$XOVH2JKjO1HCSoYEbC4O1ewJlpeqctT4kexiHkQelklK0ANuCPS9u",
+      "role": "user",
+      "employee_id": 3
+    },
+    {
+      "id": 4,
+      "email": "krishnaharshitha@gmaill.com",
+      "password": "$2a$10$hE2Bw5OCzE14RCyE1nsA8.HV/D4btGNAkSRz49n3f7l5pKOdmuyDC",
+      "role": "user",
+      "employee_id": 4
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "employee_code": "EMP001",
+      "department": "Management",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "employee_code": "EMP002",
+      "department": "Operations",
+      "user_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Anisha Sodani",
+      "employee_code": "EMP003",
+      "department": "HR",
+      "user_id": 3
+    },
+    {
+      "id": 4,
+      "name": "Krishna Harshitha",
+      "employee_code": "EMP004",
+      "department": "Sales",
+      "user_id": 4
+    }
+  ],
+  "shifts": [
+    {
+      "id": 2,
+      "employee_id": 4,
+      "date": "2025-12-10",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "duration": "4.00",
+      "created_at": "2025-12-06T14:35:43.978Z"
+    },
+    {
+      "id": 3,
+      "employee_id": 1,
+      "date": "2025-01-20",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "duration": "8.00",
+      "created_at": "2025-12-06T15:15:36.904Z"
+    },
+    {
+      "id": 4,
+      "employee_id": 4,
+      "date": "2025-01-20",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "duration": "8.00",
+      "created_at": "2025-12-06T15:16:13.170Z"
+    }
+  ]
+}
